@@ -1,0 +1,106 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #f7f1e3, #fefaf5);
+  margin: 0;
+  color: #3e2723;
+  text-align: center;
+}
+
+header {
+  background-color: #6d4c41;
+  color: #fff8e1;
+  padding: 20px;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.audio-section {
+  margin: 20px;
+  padding: 15px;
+  background: #fff8e1;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+audio {
+  width: 90%;
+  margin-top: 10px;
+}
+
+#surah-container {
+  margin: 20px auto;
+  padding: 25px;
+  max-width: 700px;
+  background: #fffdf8;
+  border-radius: 25px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  line-height: 2.2;
+}
+
+.ayat {
+  margin-bottom: 25px;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeInUp 1s forwards;
+}
+
+.arabic {
+  font-size: 1.6rem;
+  direction: rtl;
+  font-family: "Scheherazade New", serif;
+  color: #4e342e;
+}
+
+.translation {
+  font-size: 1rem;
+  color: #5d4037;
+  text-align: left;
+  margin-top: 8px;
+  background: #fff8e1;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+/* Tombol Scroll ke atas */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #795548;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  display: none;
+  transition: background 0.3s;
+}
+
+#scrollTopBtn:hover {
+  background-color: #5d4037;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: #6d4c41;
+  color: #fff8e1;
+  padding: 15px 0;
+  border-radius: 25px 25px 0 0;
+  font-size: 0.9rem;
+}
+
+/* Animasi fade in */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
